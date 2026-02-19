@@ -1,0 +1,14 @@
+{
+  "name": "realconnect",
+  "version": "1.0.0",
+  "description": "RealConnect - Connect with people you know through real connections",
+  "scripts": {
+    "client": "cd client && npm run dev",
+    "server": "cd backend && npm run dev",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "install:all": "npm install && cd client && npm install && cd ../backend && npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
